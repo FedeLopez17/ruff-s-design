@@ -11,6 +11,7 @@ body{
 
 /* Header */
 header{
+    position: relative;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -18,12 +19,28 @@ header{
     gap: 10px;
 }
 
-header > img#icon{
+header > img#icon, header > img#profile, header img#chat{
     height: 50%;
 }
 
 header > img#logo{
     height: 80%;
+}
+
+header > img#profile{
+    position: absolute;
+    right: 90px;
+   cursor: pointer;
+}
+
+header img#chat{
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+
+header img#profile:hover, header img#chat:hover{
+    transform: scale(1.05);
 }
 
 
@@ -76,7 +93,9 @@ input[type="button"]{
 }
 
 input[type="button"]:hover{
-    background-color: rgb(124, 1, 1) /* slightly darker than darkred */
+    background-color: rgb(124, 1, 1); /* slightly darker than darkred */
+    filter: drop-shadow(0 0 1px darkred);
+    outline: solid 1px white;
 }
 
 section#events{
