@@ -108,6 +108,11 @@ section#events{
 section#events > img{
     width: 30%;
     box-shadow: -3px 3px 8px 0px grey;
+    cursor: pointer;
+}
+
+section#events > img:hover{
+    transform: scale(1.02) rotate(-2deg);
 }
 
 input[type='button']#login-or-signup{
