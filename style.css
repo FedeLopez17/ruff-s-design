@@ -19,7 +19,7 @@ header{
     gap: 10px;
 }
 
-header > img#icon, header > img#profile, header img#chat{
+header > img#icon, header > img#profile, header img#chat, header img#add{
     height: 50%;
 }
 
@@ -39,7 +39,13 @@ header img#chat{
     cursor: pointer;
 }
 
-header img#profile:hover, header img#chat:hover{
+header img#add{
+    position: absolute;
+    left: 40px;
+    cursor: pointer;
+}
+
+header img#profile:hover, header img#chat:hover, header img#add:hover{
     transform: scale(1.05);
 }
 
@@ -126,8 +132,7 @@ input[type='button']#login-or-signup{
     display: flex;
     flex-direction: column;
     gap: 80px;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding: 40px 0 100px;
     background-color: #ECE6DA;
 }
 
@@ -257,17 +262,103 @@ input[type='button']#login-or-signup{
     transform: scale(1.02);
 }
 
-#collabs-page footer{
+
+/* Doubts page */
+#doubts-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0 90px;
+    background-color: #ECE6DA;
+}
+
+#doubts-page .search-bar-wrapper{
+    width: min(1100px, 90%);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#doubts-page .search-bar-wrapper .search-bar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 70%;
+    background-color: lightgrey;
+    box-shadow: 0px 2px 4px dimgrey;
+    height: 50%;
+    border-radius: 10px;
+    cursor: text;
+
+}
+
+#doubts-page .search-bar-wrapper .search-bar > img{
+    height: 50%;
+    margin-right: 10px;
+}
+
+#doubts-page .doubt{
+    width: min(1100px, 90%);
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-top: solid 6px darkgrey;
+    cursor: pointer;
+}
+
+#doubts-page .doubt .question-wrapper{
+    grid-column: 1;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#doubts-page .doubt .question-wrapper *{
+    width: 70%;
+}
+
+#doubts-page .doubt .title{
+    color: darkred;
+    font-weight: 900;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#doubts-page .doubt .poster-info{
+    grid-column: 2;
+    grid-row: 2;
+    color: darkred;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#doubts-page .doubt .poster-profile-picture{
+    height: 60px;
+}
+
+#doubts-page .doubt .poster-username{
+    margin: 0;
+}
+
+
+/* Footer */
+#collabs-page + footer, #doubts-page + footer{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
 }
 
-#collabs-page footer img{
+#collabs-page + footer img, #doubts-page + footer img{
     height: 70%;
     object-fit: contain;
 }
+
 
 /* Voice assistant */
 #voice-assistant{
