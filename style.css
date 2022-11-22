@@ -169,7 +169,7 @@ input[type='button']#login-or-signup{
     grid-template-columns: 1fr 2fr 1fr;
     justify-items: center;
     align-items: center;
-    background-color: lightslategrey;
+    background-color: #D9D9D9;
 }
 
 .post .thumbnail, .post .requirements{
