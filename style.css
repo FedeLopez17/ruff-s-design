@@ -263,8 +263,18 @@ input[type='button']#login-or-signup{
     display: flex;
     height: 80px;
     bottom: 80px;
-    right: 10px;
+    right: 14px;
     cursor: pointer;
+    border-radius: 46px;
+    background-color: darkred;
+    padding: 6px 3px 0;
+    outline: solid 4px white;
+    filter: brightness(0.9);
+}
+
+#voice-assistant:hover{
+    transform: scale(1.02);
+    filter: brightness(1);
 }
 
 @media (max-width: 600px) {
