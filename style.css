@@ -1,0 +1,116 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Header */
+header{
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header > img#icon{
+    height: 50%;
+}
+
+header > img#logo{
+    height: 80%;
+}
+
+
+/* Launch Page */
+#launch-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 0;
+    background-color: blanchedalmond;
+}
+
+.image-and-text{
+    width: min(1100px, 90%);
+    aspect-ratio: 3/1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-and-text > img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-and-text > .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10%;
+}
+
+.image-and-text > .description > p{
+    margin-top: 10%;
+    width: 30ch;
+    font-size: 1.1rem;
+}
+
+input[type="button"]{
+    padding: 8px 24px;
+    background-color: darkred;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(124, 1, 1) /* slightly darker than darkred */
+}
+
+section#events{
+    width: min(1100px, 90%);
+    padding: 4% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#events > img{
+    width: 30%;
+    box-shadow: -3px 3px 8px 0px grey;
+}
+
+input[type='button']#login-or-signup{
+    margin: 40px 0;
+}
+
+@media (max-width: 600px) {
+    .image-and-text > .description > p{
+        font-size: 0.6rem;
+    }
+    input[type="button"]{
+        font-size: 0.6rem;
+    }
+}
+
+
+/* Voice assistant */
+#voice-assistant{
+    position: fixed;
+    display: flex;
+    height: 80px;
+    bottom: 80px;
+    right: 10px;
+    cursor: pointer;
+}
