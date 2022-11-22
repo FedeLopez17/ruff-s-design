@@ -89,6 +89,7 @@ input[type="button"]{
     font-weight: 900;
     border-radius: 10px;
     font-size: 1.6rem;
+    border-color: white;
     cursor: pointer;
 }
 
