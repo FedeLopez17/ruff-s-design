@@ -127,7 +127,7 @@ input[type='button']#login-or-signup{
     flex-direction: column;
     gap: 80px;
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     background-color: #ECE6DA;
 }
 
@@ -257,6 +257,17 @@ input[type='button']#login-or-signup{
     transform: scale(1.02);
 }
 
+#collabs-page footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+#collabs-page footer img{
+    height: 70%;
+    object-fit: contain;
+}
 
 /* Voice assistant */
 #voice-assistant{
